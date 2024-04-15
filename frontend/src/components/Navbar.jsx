@@ -6,18 +6,16 @@ import { Link } from "react-router-dom";
 
 import './Navbar.css';
 
-
-
 export default function NewNavbar() {
   const [showNavbar, setShowNavbar] = useState(false);
-
+  
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
 
   const handleOpen = () => setOpen(true);
- 
+  
 
   return (
     <nav className="new-navbar">
@@ -55,7 +53,8 @@ export default function NewNavbar() {
             </li>
           </ul>
         </div>
-     
+    
+
       </div>
     </nav>
   );

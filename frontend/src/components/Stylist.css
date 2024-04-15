@@ -1,0 +1,51 @@
+
+  .stylist-header{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 90px;
+  }
+  .stylist-item{
+    position: relative;
+  }
+  .stylist-image{
+    height:272px ;
+    width: 218px;
+    object-fit:cover;
+    padding: 7px;
+    border-radius: 26px;
+    transition:  transform 450ms;
+    position: relative;
+    
+  }
+  .stylist-text{
+    position: absolute;
+    bottom: 50px; 
+    left: 10px; 
+    color: #fff;
+    font-size: small;
+    font-weight: 600;
+    line-height: 1;
+    padding: 10px;
+  }
+  .stylist-span{
+    font-size: smaller;
+  }
+  .stylist-container{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px;
+    margin-top: 50px;
+  
+  }
+  .stylist-image:hover{
+    transform: scale(1.08);
+   }
+   .stylist-text{
+    color: #fff;
+    font-size: larger;
+    font-weight: 600;
+   }
+  
+  
+  
