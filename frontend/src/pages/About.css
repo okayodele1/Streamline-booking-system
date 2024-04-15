@@ -1,0 +1,22 @@
+
+.about-container {
+    position: relative;
+    height: 400px;
+    background-image: url('https://images.unsplash.com/photo-1595475693741-b445b025aec7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGhhaXIlMjBzYWxvbnxlbnwwfHwwfHx8Mg%3D%3D');
+    background-size:cover;
+    text-align:center;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-top: 80px;
+   
+    
+  }
+  .about-text {
+    font-size: 3.5rem;
+    margin-left: 20px;
+    padding-top: 280px;
+    
+  }
+  .about-desc{
+    margin-top: 50px;
+  }

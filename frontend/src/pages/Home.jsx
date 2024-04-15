@@ -1,6 +1,14 @@
+import Header from '../components/Header'
+
+import './Home.css'
 function Home() {
   return (
-    <div>Home</div>
+    <>
+  <Header/>
+  
+ 
+    </>
+   
   )
 }
 
