@@ -4,7 +4,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/salon.png"; 
 import { Link } from "react-router-dom";
 
-
 import './Navbar.css';
 
 
@@ -12,11 +11,13 @@ import './Navbar.css';
 export default function NewNavbar() {
   const [showNavbar, setShowNavbar] = useState(false);
 
+
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
 
   const handleOpen = () => setOpen(true);
+ 
 
   return (
     <nav className="new-navbar">
@@ -54,7 +55,7 @@ export default function NewNavbar() {
             </li>
           </ul>
         </div>
-      
+     
       </div>
     </nav>
   );

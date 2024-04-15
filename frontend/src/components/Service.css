@@ -1,0 +1,45 @@
+
+  .service-header{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 90px;
+  }
+  .service-item{
+    position: relative;
+  }
+  .service-image{
+    height:200px ;
+    width: 200px;
+    object-fit:cover;
+    padding: 7px;
+    border-radius: 50%;
+    transition:  transform 450ms;
+    
+  }
+  .service-text{
+    bottom: 50px; 
+    left: 10px; 
+    color: #fff;
+    font-size: larger;
+    font-weight: 600;
+    line-height: 1;
+    padding: 10px;
+  }
+
+  .service-container{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px;
+    margin-top: 50px;
+  
+  }
+  .service-image:hover{
+    transform: scale(1.08);
+   }
+   .service-text{
+    color: #000;
+   }
+  
+  
+  
