@@ -42,11 +42,6 @@ button {
   transition: border-color 0.25s;
 }
 
-button:hover {
-  background-color :#fff;
-  color:#f6526d ;
-  border: #f6526d ;
-}
 
 
 @media (prefers-color-scheme: light) {
@@ -81,7 +76,8 @@ body {
 }
 
 .footer-wrapper {
-  padding-top: 150px;
+  padding-top: 50px;
+  padding-left: 40px;
   display: flex;
   gap: 100px;
   justify-content: start;
@@ -96,29 +92,4 @@ body {
   align-items: center;
 }
 
-
-/* Event */
-.event-container {
-  height: 400px;
-  text-align:center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 30px;
-  filter: brightness(70%);
-}
-
-.event-text {
-  font-size: 3.5rem;
-  margin-left: 20px;
-  color: #fff;
-  padding-top: 280px;
-  
-}
-.event-heading{
-  display:flex;
-  font-size:1.7rem;
-}
-.event-two{
-  display:flex;
-}
 
