@@ -43,7 +43,6 @@ button {
 }
 
 
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -92,4 +91,29 @@ body {
   align-items: center;
 }
 
+
+/* Event */
+.event-container {
+  height: 400px;
+  text-align:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  filter: brightness(70%);
+}
+
+.event-text {
+  font-size: 3.5rem;
+  margin-left: 20px;
+  color: #fff;
+  padding-top: 280px;
+  
+}
+.event-heading{
+  display:flex;
+  font-size:1.7rem;
+}
+.event-two{
+  display:flex;
+}
 
