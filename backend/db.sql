@@ -1,39 +1,36 @@
--- Create database
-CREATE DATABASE IF NOT EXISTS salon_appointments;
-USE salon_appointments;
+CREATE TABLE `salon`.`appointment` (
+    `appointment_id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(255) NOT NULL,
+    `email` VARCHAR(255) NOT NULL,
+    `phone` VARCHAR(45) NOT NULL,
+    `appointment_date` DATETIME NOT NULL,
+    `service_name` VARCHAR(255) NOT NULL,
+    `stylist` VARCHAR(255) NOT NULL,
+    `user_id` INT NOT NULL,
+    `service_id` INT NOT NULL,
+    `appointment_time` TIME NOT NULL,
+    PRIMARY KEY (`appointment_id`)
+) ENGINE=InnoDB;
 
+CREATE TABLE `salon`.`user` (
+    `user_id` INT NOT NULL AUTO_INCREMENT,
+    `username` VARCHAR(255) NOT NULL,
+    `password` VARCHAR(255) NOT NULL,
+    `email` VARCHAR(255) NOT NULL,
+    PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB;
 
-CREATE TABLE IF NOT EXISTS users (
-    user_id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL,
-    password VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL
-);
+CREATE TABLE `salon`.`stylist` (
+    `stylist_id` INT NOT NULL AUTO_INCREMENT,
+    `stylist_name` TEXT NOT NULL,
+    `stylist_image` VARCHAR(45) NOT NULL,
+    PRIMARY KEY (`stylist_id`)
+) ENGINE=InnoDB;
 
-
-CREATE TABLE IF NOT EXISTS services (
-    service_id INT AUTO_INCREMENT PRIMARY KEY,
-    service_name VARCHAR(100) NOT NULL,
-    description TEXT,
-    price DECIMAL(10, 2) NOT NULL
-);
-
-
-CREATE TABLE IF NOT EXISTS appointments (
-    appointment_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
-    service_id INT NOT NULL,
-    appointment_date DATETIME NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES users(user_id),
-    FOREIGN KEY (service_id) REFERENCES services(service_id)
-);
-
-
-INSERT INTO users (username, password, email) VALUES 
-('user1', 'password1', 'test1@example.com'),
-('user2', 'password2', 'test2@example.com');
-
-INSERT INTO services (service_name, description, price) VALUES 
-('Haircut', 'Basic haircut', 30.00),
-('Hair Color', 'Hair coloring service', 50.00);
-
+CREATE TABLE `salon`.`services` (
+    `services_id` INT NOT NULL AUTO_INCREMENT,
+    `service_name` VARCHAR(255) NOT NULL,
+    `description` VARCHAR(255) NOT NULL,
+    `price` DECIMAL(10,2) NOT NULL,
+    PRIMARY KEY (`services_id`)
+) ENGINE=InnoDB;
