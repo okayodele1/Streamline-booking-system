@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import SignUp from './pages/SignUp';
 import Services from './pages/Services';
 import Faqs from './pages/Faqs';
+import Admin from './pages/Admin';
 
 function App() {
   const Layout = () => {
@@ -54,6 +55,10 @@ function App() {
         {
           path: "/services",
           element: <Services />,
+        },
+        {
+          path: "/admin",
+          element: <Admin />,
         },
       ],
     },

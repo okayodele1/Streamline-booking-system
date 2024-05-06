@@ -117,3 +117,7 @@ body {
   display:flex;
 }
 
+.custom-timepicker {
+  width: 100%;
+  margin-bottom: 10px; 
+}
