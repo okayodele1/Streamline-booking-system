@@ -211,9 +211,18 @@ export default function NewNavbar() {
                   <MenuItem value="" disabled>
                     Select Service
                   </MenuItem>
-                  <MenuItem value="Barbing">Barbing</MenuItem>
-                  <MenuItem value="Polishing">Polishing</MenuItem>
-                  <MenuItem value="Extension">Extensions</MenuItem>
+                  <MenuItem value="Barbing">Barbing £50</MenuItem>
+                  <MenuItem value="Polishing">Polishing £50</MenuItem>
+                  <MenuItem value="Extension">Extensions £30</MenuItem>
+                  <MenuItem value="Dreadlock">Dreadlock £50</MenuItem>
+                  <MenuItem value="Braids">Braid £50</MenuItem>
+                  <MenuItem value="Cornroll">Cornroll £30</MenuItem>
+                  <MenuItem value="Knotless braids">Knotless braids £30</MenuItem>
+                  <MenuItem value="Hair twist">Hair twist £50</MenuItem>
+                  <MenuItem value="Fixing">Fixing £50</MenuItem>
+                  <MenuItem value="Hair Wash">Hair Wash £40</MenuItem>
+                  <MenuItem value="Hair treatment">Hair treatment £50</MenuItem>
+                  <MenuItem value="Frontal Installation">Frontal Installation £60</MenuItem>
                 </Select>
                 <Select
                   fullWidth
@@ -229,6 +238,9 @@ export default function NewNavbar() {
                   <MenuItem value="Sharon">Sharon</MenuItem>
                   <MenuItem value="Jay">Jay</MenuItem>
                   <MenuItem value="Judy">Judy</MenuItem>
+                  <MenuItem value="Brad">Brad</MenuItem>
+                  <MenuItem value="Deo">Deo</MenuItem>
+                  <MenuItem value="Banks">Banks</MenuItem>
                 </Select>
 
                 <TextField

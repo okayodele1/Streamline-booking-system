@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import "./Service.css" 
 function Service() {
     const data = [
@@ -44,12 +44,8 @@ function Service() {
     <h1 className="service-header">Our Stylists</h1>
     <div className="service-container">
       {data.map((item) => (
-        <Link
-          key={item.id}
-          to={`//${item.id}`} 
-          className="service-item-link"
-        >
-          <div className="service-item">
+          <div className="service-item"     key={item.id}
+          to={`//${item.id}`} >
             <img
               src={item.image}
               alt={item.name}
@@ -57,7 +53,8 @@ function Service() {
             />
             <span className="service-text">{item.name}</span>
           </div>
-        </Link>
+        
+      
       ))}
     </div>
   </div></div>

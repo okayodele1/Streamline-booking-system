@@ -8,7 +8,6 @@ function Footer() {
     <footer className="footer-container">
       <div className="footer-wrapper">
         <div className="footer">
-          {/* <img src="" alt="" className="footer-logo" /> */}
           <p className="footer-heading">Contact Us</p>
           <span className="footer-list">
            Chelsea,

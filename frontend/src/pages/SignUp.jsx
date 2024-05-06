@@ -40,9 +40,9 @@ function SignUp() {
       });
       localStorage.setItem("token", response.data.token);
       setSnackbarMessage("Registration successful");
-      setOpenSnackbar(true); // Open Snackbar on successful registration
+      setOpenSnackbar(true); 
       navigate("/");
-      window.location.reload(); // Reload the page
+      window.location.reload(); 
     } catch (error) {
       console.error("Error registering:", error);
       alert("Failed to register. Please try again later.");

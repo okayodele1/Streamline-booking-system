@@ -42,4 +42,6 @@
    }
   
   
-  
+   .service-container::-webkit-scrollbar {
+    display: none;
+  }

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import "./Stylist.css";
 function Stylist() {
     const data = [
@@ -31,12 +31,8 @@ function Stylist() {
         <h1 className="stylist-header">Our Services</h1>
         <div className="stylist-container">
           {data.map((item) => (
-            <Link
-              key={item.id}
-              to={`//${item.id}`}
-              className="stylist-item-link"
-            >
-              <div className="stylist-item">
+              <div className="stylist-item"    key={item.id}
+              to={`//${item.id}`}>
                 <img
                   src={item.image}
                   alt={item.name}
@@ -44,7 +40,6 @@ function Stylist() {
                 />
                 <span className="stylist-text">{item.name}</span>
               </div>
-            </Link>
           ))}
         </div>
       </div>

@@ -9,7 +9,6 @@ export const register = (req, res) => {
     if (err) return res.status(500).json(err);
     if (data.length) return res.status(409).json("User already exists!");
 
-    // Create new user
     const salt = bcrypt.genSaltSync(10);
     const hash = bcrypt.hashSync(req.body.password, salt);
     const newUser = {
@@ -18,17 +17,16 @@ export const register = (req, res) => {
       password: hash,
     };
 
-    // Insert user into database
     const insertQuery = "INSERT INTO user SET ?";
     db.query(insertQuery, newUser, (err, result) => {
       if (err) return res.status(500).json(err);
 
-      // Generate JWT token
+
       const token = jwt.sign({ username: newUser.username }, "secret_key", {
         expiresIn: "1h", 
       });
 
-      // Return token to frontend
+
       return res.status(200).json({ token });
     });
   });
